@@ -1,0 +1,17 @@
+.Card {
+    background: var(--bg-color);
+    border-radius: var(--border-primary-radius);
+}
+
+.outline {
+    border: 1px solid var(--inverted-bg-color);
+    transition: border 0.3s;
+
+    &:hover {
+        border-color: #f7d22d99;
+    }
+}
+
+.maxWidth {
+    width: 100%;
+}

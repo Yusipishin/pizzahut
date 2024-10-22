@@ -1,0 +1,52 @@
+:root {
+    --font-family-main: "Montserrat", sans-serif;
+
+    // XS
+    --font-size-xs: 14px;
+    --font-line-xs: 22px;
+    --font-xs: 300 var(--font-size-xs) / var(--font-line-xs) var(--font-family-main);
+
+    // S
+    --font-size-s: 16px;
+    --font-line-s: 24px;
+    --font-s: 400 var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+
+    // M
+    --font-size-m: 20px;
+    --font-line-m: 28px;
+    --font-m: 500 var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+
+    // L
+    --font-size-l: 28px;
+    --font-line-l: 36px;
+    --font-l: 500 var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+
+    // XL
+    --font-size-xl: 44px;
+    --font-line-xl: 52px;
+    --font-xl: 600 var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+
+    // shadow
+    --primary-shadow: 0 4px 24px 0 rgb(0 0 0 / 26%);
+
+    // border
+    --border-m-radius: 12px;
+    --border-half-radius: 50%;
+
+    // sizes
+    --header-height: 100px;
+    --container-width: 1350px;
+
+    // z - index
+    --overlay-z-index: 88;
+    --modal-z-index: 99;
+    --popup-z-index: 999;
+
+    // opacity
+    --opacity-half: 0.5;
+
+    // colors
+    --error-light-color: #f70909;
+    --error-dark-color: #ad0909;
+    --overlay-color: linear-gradient(134deg, rgba(64, 64, 64, 0.33) 0%, rgba(152, 152, 152, 0.33) 100%);
+}
