@@ -5,7 +5,7 @@ import { VStack } from '../../../Stack';
 
 const meta: Meta<typeof Popover> = {
     component: Popover,
-    title: 'shared/Popover',
+    title: 'shared/Popups/Popover',
 };
 export default meta;
 

@@ -1,1 +1,6 @@
-{}
+{
+    "У вас нет доступа к этой странице": "You do not have access to this page",
+    "Произошла непредвиденная ошибка": "An unexpected error occurred",
+    "Обновить страницу": "Refresh page",
+    "Выбросить ошибку": "Throw error"
+}

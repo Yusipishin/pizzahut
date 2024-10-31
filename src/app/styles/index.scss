@@ -1,9 +1,8 @@
-@import "variables/global";
-@import "reset";
-@import "fonts";
-@import "swiper";
-@import "themes/light";
-@import "themes/dark";
+@use "variables/global";
+@use "reset";
+@use "fonts";
+@use "themes/dark";
+@use "themes/light";
 
 html {
     scrollbar-gutter: stable;

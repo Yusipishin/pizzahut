@@ -18,3 +18,14 @@ export const Primary: Story = {
         ],
     },
 };
+
+export const Readonly: Story = {
+    args: {
+        label: 'Укажите значение',
+        options: [
+            { value: '123', content: 'Первый пункт' },
+            { value: '123456', content: 'Второй пункт' },
+        ],
+        readonly: true,
+    },
+};

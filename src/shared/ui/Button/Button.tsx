@@ -74,6 +74,7 @@ export const Button = memo((props: ButtonProps) => {
                 cls[radius],
                 cls[effect],
             ])}
+            data-testid="Button"
             {...otherProps}
         >
             {children}

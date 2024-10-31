@@ -4,7 +4,7 @@
     right: 0;
     bottom: 0;
     opacity: 0;
-    z-index: 100;
+    z-index: 50;
     display: flex;
     position: fixed;
     align-items: center;
@@ -26,9 +26,13 @@
     justify-content: center;
 }
 
+.hideContent {
+    display: none;
+}
+
 .closeIcon {
-    top: 15px;
-    right: 15px;
+    top: 30px;
+    right: 30px;
     cursor: pointer;
     position: absolute;
 }

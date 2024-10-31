@@ -9,7 +9,7 @@ import cls from './Dropdown.module.scss';
 
 export interface DropdownItem {
     disabled?: boolean;
-    content?: ReactNode;
+    content: ReactNode;
     onClick?: () => void;
     href?: string;
 }
@@ -28,12 +28,18 @@ export function Dropdown(props: DropdownProps) {
     return (
         <Menu
             as="div"
+            data-testid="Dropdown.Menu"
             className={classNames(cls.Dropdown, {}, [
                 className,
                 popupCls.popup,
             ])}
         >
-            <Menu.Button className={popupCls.trigger}>{trigger}</Menu.Button>
+            <Menu.Button
+                data-testid="Dropdown.ButtonTrigger"
+                className={popupCls.trigger}
+            >
+                {trigger}
+            </Menu.Button>
             <Menu.Items className={classNames(cls.menu, {}, menuClasses)}>
                 {items.map((item, i) => {
                     const content = ({ active }: { active: boolean }) => (

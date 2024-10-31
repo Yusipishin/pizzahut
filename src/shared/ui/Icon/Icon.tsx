@@ -16,6 +16,7 @@ export const Icon = (props: IconProps) => {
             className={classNames(inverted ? cls.inverted : cls.Icon, {}, [
                 className,
             ])}
+            data-testid="Icon.Svg"
             {...otherProps}
         />
     );

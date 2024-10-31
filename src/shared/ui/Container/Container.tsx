@@ -14,8 +14,18 @@ export const Container = memo((props: ContainerProps) => {
     const { className, children, Tag = 'section', id, anchorRef } = props;
 
     return (
-        <Tag className={classNames(cls.Container, {}, [className])}>
-            {id && <div ref={anchorRef} id={id} className={cls.anchorBlock} />}
+        <Tag
+            data-testid="Container.Tag"
+            className={classNames(cls.Container, {}, [className])}
+        >
+            {id && (
+                <div
+                    data-testid="Container.divAnchor"
+                    ref={anchorRef}
+                    id={id}
+                    className={cls.anchorBlock}
+                />
+            )}
             {children}
         </Tag>
     );

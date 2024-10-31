@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Text.module.scss';
 
-type TextTheme = 'primary' | 'error' | 'accent' | 'secondary' | 'bg';
+type TextTheme = 'primary' | 'error' | 'accent' | 'secondary';
 type TextAlign = 'left' | 'right' | 'center';
 type HeaderTagType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
 
@@ -48,7 +48,10 @@ export const Text = memo((props: TextProps) => {
     const additional = [className, cls[theme], cls[align], cls[size]];
 
     return (
-        <div className={classNames(cls.Text, {}, additional)}>
+        <div
+            data-testid={`${dataTestId}.div`}
+            className={classNames(cls.Text, {}, additional)}
+        >
             {title && (
                 <HeaderTag
                     className={cls.title}

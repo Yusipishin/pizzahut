@@ -10,7 +10,7 @@ export interface SelectOption<T extends string> {
 interface SelectProps<T extends string> {
     className?: string;
     label?: string;
-    options?: SelectOption<T>[];
+    options: SelectOption<T>[];
     value?: T;
     readonly?: boolean;
     onChange?: (value: T) => void;
@@ -38,13 +38,22 @@ export const Select = <T extends string>(props: SelectProps<T>) => {
     };
 
     return (
-        <div className={classNames(cls.Wrapper, {}, [className])}>
-            {label && <span className={cls.label}>{`${label}>`}</span>}
+        <div
+            data-testid="Select.Wrapper"
+            className={classNames(cls.Wrapper, {}, [className])}
+        >
+            {label && (
+                <span
+                    data-testid="Select.Label"
+                    className={cls.label}
+                >{`${label}>`}</span>
+            )}
             <select
                 disabled={readonly}
                 className={cls.select}
                 value={value}
                 onChange={onChangeHandler}
+                data-testid="Select"
             >
                 {optionsList}
             </select>

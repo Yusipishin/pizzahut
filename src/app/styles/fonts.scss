@@ -4,9 +4,9 @@
     font-style: normal;
     src:
         local("Montserrat"),
-        url("../../shared/assets/fonts/Montserrat-Light.woff2") format("woff2"),
-        url("../../shared/assets/fonts/Montserrat-Light.woff") format("woff"),
-        url("../../shared/assets/fonts/Montserrat-Light.eot") format("eot");
+        url("@/shared/assets/fonts/Montserrat-Light.woff2") format("woff2"),
+        url("@/shared/assets/fonts/Montserrat-Light.woff") format("woff"),
+        url("@/shared/assets/fonts/Montserrat-Light.eot") format("eot");
     font-display: swap;
 }
 
@@ -16,9 +16,9 @@
     font-style: normal;
     src:
         local("Montserrat"),
-        url("../../shared/assets/fonts/Montserrat-Regular.woff2") format("woff2"),
-        url("../../shared/assets/fonts/Montserrat-Regular.woff") format("woff"),
-        url("../../shared/assets/fonts/Montserrat-Regular.eot") format("eot");
+        url("@/shared/assets/fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("@/shared/assets/fonts/Montserrat-Regular.woff") format("woff"),
+        url("@/shared/assets/fonts/Montserrat-Regular.eot") format("eot");
     font-display: swap;
 }
 
@@ -28,9 +28,9 @@
     font-style: normal;
     src:
         local("Montserrat"),
-        url("../../shared/assets/fonts/Montserrat-Medium.woff2") format("woff2"),
-        url("../../shared/assets/fonts/Montserrat-Medium.woff") format("woff"),
-        url("../../shared/assets/fonts/Montserrat-Medium.eot") format("eot");
+        url("@/shared/assets/fonts/Montserrat-Medium.woff2") format("woff2"),
+        url("@/shared/assets/fonts/Montserrat-Medium.woff") format("woff"),
+        url("@/shared/assets/fonts/Montserrat-Medium.eot") format("eot");
     font-display: swap;
 }
 
@@ -40,8 +40,8 @@
     font-style: normal;
     src:
         local("Montserrat"),
-        url("../../shared/assets/fonts/Montserrat-SemiBold.woff2") format("woff2"),
-        url("../../shared/assets/fonts/Montserrat-SemiBold.woff") format("woff"),
-        url("../../shared/assets/fonts/Montserrat-SemiBold.eot") format("eot");
+        url("@/shared/assets/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("@/shared/assets/fonts/Montserrat-SemiBold.woff") format("woff"),
+        url("@/shared/assets/fonts/Montserrat-SemiBold.eot") format("eot");
     font-display: swap;
 }

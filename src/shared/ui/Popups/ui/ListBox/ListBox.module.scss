@@ -8,7 +8,7 @@
     position: absolute;
     z-index: var(--popup-z-index);
     min-width: 100%;
-    border-radius: 12px;
+    border-radius: var(--border-m-radius);
     box-shadow: 4px 4px 8px var(--primary-color);
 }
 

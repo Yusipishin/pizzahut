@@ -24,7 +24,7 @@ interface InputProps extends HTMLInputProps {
 export const Input = memo((props: InputProps) => {
     const {
         className,
-        value,
+        value = '',
         onChange,
         autofocus,
         type = 'text',
@@ -52,9 +52,13 @@ export const Input = memo((props: InputProps) => {
                 { [cls.readonly]: readonly },
                 [className],
             )}
+            data-testid="Input.div"
         >
             {placeholder && (
-                <div className={cls.placeholder}>{`${placeholder}>`}</div>
+                <div
+                    data-testid="Input.divPlaceholder"
+                    className={cls.placeholder}
+                >{`${placeholder}>`}</div>
             )}
             <div className={cls.caretWrapper}>
                 <input
@@ -64,6 +68,7 @@ export const Input = memo((props: InputProps) => {
                     readOnly={readonly}
                     onChange={onChangeHandler}
                     className={cls.input}
+                    data-testid="Input.input"
                     {...otherProps}
                 />
             </div>

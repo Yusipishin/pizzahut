@@ -27,7 +27,7 @@
     left: 2vw;
     height: calc(100vh + 100px);
     width: 96vw;
-    border-radius: 12px 12px 0;
+    border-radius: var(--border-m-radius) var(--border-m-radius) 0;
     background: var(--bg-color);
     touch-action: none;
     padding: 15px;

@@ -4,7 +4,7 @@ import { Button } from '../../../Button';
 
 const meta: Meta<typeof Dropdown> = {
     component: Dropdown,
-    title: 'shared/Dropdown',
+    title: 'shared/Popups/Dropdown',
 };
 export default meta;
 

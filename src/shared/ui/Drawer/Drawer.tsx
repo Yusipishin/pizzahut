@@ -79,8 +79,9 @@ export const DrawerContent = memo((props: DrawerProps) => {
                 className={classNames(cls.Drawer, { [cls.opened]: isOpen }, [
                     className,
                 ])}
+                data-testid="Drawer.div"
             >
-                <Overlay onClick={close} />
+                <Overlay data-testid="Drawer.Overlay" onClick={close} />
                 <Spring.a.div
                     className={cls.sheet}
                     style={{

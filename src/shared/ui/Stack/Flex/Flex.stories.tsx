@@ -3,7 +3,7 @@ import { Flex } from './Flex';
 
 const meta: Meta<typeof Flex> = {
     component: Flex,
-    title: 'shared/Flex',
+    title: 'shared/Stack/Flex',
 };
 export default meta;
 

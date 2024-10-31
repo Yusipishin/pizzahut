@@ -1,14 +1,14 @@
 import { CSSProperties, useMemo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Avatar.module.scss';
-import { AppImage } from '../AppImage/AppImage';
 import BaseAvatarIcon from '../../assets/img/icons/avatar-ic.svg';
 import { Icon } from '../Icon';
 import { Skeleton } from '../Skeleton';
+import { AppImage } from '../AppImage';
 
 interface AvatarProps {
     className?: string;
-    src?: string;
+    src: string;
     size?: number;
     alt?: string;
     falllbackInverted?: boolean;
@@ -43,6 +43,7 @@ export const Avatar = (props: AvatarProps) => {
             style={styles}
             fallback={fallback}
             errorFallback={errorFallback}
+            data-testid="Avatar.AppImage"
             className={classNames(cls.Avatar, {}, [className])}
         />
     );

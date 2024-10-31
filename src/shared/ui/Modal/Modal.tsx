@@ -4,14 +4,14 @@ import { useModal } from '../../lib/hooks/useModal/useModal';
 import { Overlay } from '../Overlay/Overlay';
 import { Portal } from '../Portal/Portal';
 import cls from './Modal.module.scss';
-import CloseIcon from '../../assets/img/icons/close-ic.svg';
+import CloseIcon from '../../assets/img/icons/close-ic.svg?react';
 import { Icon } from '../Icon';
 
 interface ModalProps {
     className?: string;
-    children?: ReactNode;
-    isOpen?: boolean;
-    onClose?: () => void;
+    children: ReactNode;
+    isOpen: boolean;
+    onClose: () => void;
     lazy?: boolean;
 }
 
@@ -44,13 +44,17 @@ export const Modal = (props: ModalProps) => {
 
     return (
         <Portal container={document.querySelector('.app') ?? document.body}>
-            <div className={classNames(cls.Modal, mods, [className])}>
-                <Overlay onClick={close} />
+            <div
+                data-testid="Modal.div"
+                className={classNames(cls.Modal, mods, [className])}
+            >
+                <Overlay data-testid="Modal.Overlay" onClick={close} />
                 <div className={cls.content}>
                     {children}
                     <Icon
                         Svg={CloseIcon}
                         onClick={close}
+                        data-testid="Modal.IconClose"
                         className={cls.closeIcon}
                     />
                 </div>

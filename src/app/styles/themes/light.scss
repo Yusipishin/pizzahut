@@ -1,11 +1,10 @@
-.app_dark_theme {
+.app_light_theme {
     --bg-color: #1c1c1c;
     --primary-color: #e3e3e3;
     --secondary-color: #cacaca;
-    --accent-color: linear-gradient(106deg, #f90 0%, #ffeb3a 100%);;
-
     --inverted-bg-color: #282828;
     --additional-bg-color: #414141;
+    --accent-color: linear-gradient(106deg, #f90 0%, #ffeb3a 100%);
 
     // skeleton
     --skeleton-color: #dbdbdb;

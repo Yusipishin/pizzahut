@@ -19,13 +19,21 @@ export function Popover(props: PopoverProps) {
 
     return (
         <HPopover
+            data-testid="Popover"
             className={classNames(cls.Popover, {}, [className, popupCls.popup])}
         >
-            <HPopover.Button as="div" className={popupCls.trigger}>
+            <HPopover.Button
+                as="div"
+                className={popupCls.trigger}
+                data-testid="Popover.ButtonTrigger"
+            >
                 {trigger}
             </HPopover.Button>
 
-            <HPopover.Panel className={classNames(cls.panel, {}, menuClasses)}>
+            <HPopover.Panel
+                data-testid="Popover.Panel"
+                className={classNames(cls.panel, {}, menuClasses)}
+            >
                 {children}
             </HPopover.Panel>
         </HPopover>

@@ -1,11 +1,11 @@
-import 'swiper/scss';
-import './styles/index.scss';
 import { Suspense } from 'react';
+import { AppRouter } from './providers/router';
+import './styles/index.scss';
 
 const App = () => (
     <div className="app">
         <Suspense fallback="">
-            <div />
+            <AppRouter />
         </Suspense>
     </div>
 );

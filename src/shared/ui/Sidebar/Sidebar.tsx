@@ -5,13 +5,13 @@ import { useModal } from '@/shared/lib/hooks/useModal/useModal';
 import { Portal } from '../Portal';
 import { Overlay } from '../Overlay';
 import { Icon } from '../Icon';
-import CloseIcon from '../../assets/img/icons/close-ic.svg';
+import CloseIcon from '../../assets/img/icons/close-ic.svg?react';
 
 interface SidebarProps {
     className?: string;
-    children?: ReactNode;
-    isOpen?: boolean;
-    onClose?: () => void;
+    children: ReactNode;
+    isOpen: boolean;
+    onClose: () => void;
     lazy?: boolean;
 }
 
@@ -44,13 +44,19 @@ export const Sidebar = memo((props: SidebarProps) => {
 
     return (
         <Portal container={document.querySelector('.app') ?? document.body}>
-            <div className={classNames(cls.Sidebar, mods, [className])}>
-                <Overlay onClick={close} />
+            <div
+                data-testid="Sidebar.div"
+                className={classNames(cls.Sidebar, mods, [className])}
+            >
+                <Overlay data-testid="Sidebar.Overlay" onClick={close} />
                 <aside className={cls.content}>
-                    {children}
+                    <div className={isClosing ? cls.hideContent : null}>
+                        {children}
+                    </div>
                     <Icon
                         Svg={CloseIcon}
                         onClick={close}
+                        data-testid="Sidebar.IconClose"
                         className={cls.closeIcon}
                     />
                 </aside>

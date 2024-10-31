@@ -21,13 +21,13 @@ const meta: Meta = {
         StyleDecorator,
         RouterDecorator,
         SuspenseDecorator,
-        ThemeDecorator(Theme.LIGHT),
+        ThemeDecorator(Theme.DARK),
         withThemeByClassName({
-            defaultTheme: 'light',
+            defaultTheme: 'dark',
             parentSelector: '.app',
             themes: {
-                light: Theme.LIGHT,
                 dark: Theme.DARK,
+                light: Theme.LIGHT,
             },
         }),
     ],

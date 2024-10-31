@@ -3,7 +3,7 @@ import { VStack } from './VStack';
 
 const meta: Meta<typeof VStack> = {
     component: VStack,
-    title: 'shared/VStack',
+    title: 'shared/Stack/VStack',
 };
 export default meta;
 

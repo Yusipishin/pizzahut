@@ -2,9 +2,7 @@ import { ButtonHTMLAttributes, memo, ReactNode } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Card.module.scss';
 
-export enum CardTheme {
-    OUTLINE = 'outline',
-}
+export type CardTheme = 'outline';
 
 interface CardProps extends ButtonHTMLAttributes<HTMLDivElement> {
     className?: string;
@@ -22,6 +20,7 @@ export const Card = memo((props: CardProps) => {
                 className,
                 cls[theme],
             ])}
+            data-testid="Card.article"
             {...otherProps}
         >
             {children}

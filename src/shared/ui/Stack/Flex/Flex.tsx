@@ -44,7 +44,7 @@ export interface FlexProps extends DivProps {
     children: ReactNode;
     justify?: FlexJustify;
     align?: FlexAlign;
-    direction: FlexDirection;
+    direction?: FlexDirection;
     gap?: FlexGap;
     max?: boolean;
     wrap?: boolean;
@@ -78,6 +78,7 @@ export const Flex = (props: FlexProps) => {
                 { [cls.max]: max, [cls.wrap]: wrap },
                 classes,
             )}
+            data-testid="Flex.div"
             {...otherProps}
         >
             {children}

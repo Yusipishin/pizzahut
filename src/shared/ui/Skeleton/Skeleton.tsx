@@ -8,7 +8,7 @@ interface SkeletonProps {
     width?: string | number;
     marginTop?: string | number;
     marginBottom?: string | number;
-    border?: string;
+    border?: string | number;
 }
 
 export const Skeleton = (props: SkeletonProps) => {
@@ -31,8 +31,9 @@ export const Skeleton = (props: SkeletonProps) => {
 
     return (
         <div
-            className={classNames(cls.Skeleton, {}, [className])}
             style={styles}
+            data-testid="Skeleton.div"
+            className={classNames(cls.Skeleton, {}, [className])}
         />
     );
 };

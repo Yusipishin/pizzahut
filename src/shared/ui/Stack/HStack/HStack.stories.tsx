@@ -3,7 +3,7 @@ import { HStack } from './HStack';
 
 const meta: Meta<typeof HStack> = {
     component: HStack,
-    title: 'shared/HStack',
+    title: 'shared/Stack/HStack',
 };
 export default meta;
 

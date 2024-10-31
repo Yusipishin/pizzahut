@@ -1,13 +1,28 @@
-.bg {
-    color: var(--bg-color);
-}
-
 .primary {
     color: var(--primary-color);
 }
 
 .accent {
-    color: var(--accent-color);
+    color: var(--primary-color);
+    background-image: var(--accent-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: animate-gradient 3s linear infinite;
+}
+
+@keyframes animate-gradient {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
 }
 
 .secondary {

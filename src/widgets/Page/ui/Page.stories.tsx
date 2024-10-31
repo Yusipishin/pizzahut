@@ -12,4 +12,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
     decorators: [StoreDecorator({})],
+    args: {
+        children: 'Page!',
+    },
 };

@@ -15,7 +15,7 @@ export interface ListBoxItem {
 }
 
 interface ListBoxProps {
-    items?: ListBoxItem[];
+    items: ListBoxItem[];
     className?: string;
     value?: string;
     defaultValue?: string;
@@ -51,15 +51,18 @@ export function ListBox(props: ListBoxProps) {
                 ])}
                 value={value}
                 onChange={onChange}
+                data-testid="ListBox"
             >
                 <HListBox.Button
                     as={Button}
                     aria-disabled={readonly}
                     className={cls.trigger}
+                    data-testid="ListBox.ButtonTrigger"
                 >
                     {value ?? defaultValue}
                 </HListBox.Button>
                 <HListBox.Options
+                    data-testid="ListBox.Options"
                     className={classNames(cls.options, {}, optionsClasses)}
                 >
                     {items?.map((item) => (

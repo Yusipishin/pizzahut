@@ -3,10 +3,10 @@ import { ListBox } from './ListBox';
 
 const meta: Meta<typeof ListBox> = {
     component: ListBox,
-    title: 'shared/ListBox',
+    title: 'shared/Popups/ListBox',
     decorators: [
         (Story) => (
-            <div style={{ padding: 200 }}>
+            <div style={{ padding: 300 }}>
                 <Story />
             </div>
         ),
