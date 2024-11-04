@@ -1,10 +1,14 @@
 import { memo } from 'react';
 import { Page } from '@/widgets/Page';
+import { HeaderMain } from '@/widgets/Headers';
 
 const MainPage = memo(() => (
-    <Page data-testid="MainPage">
-        <div />
-    </Page>
+    <>
+        <HeaderMain />
+        <Page data-testid="MainPage">
+            <div />
+        </Page>
+    </>
 ));
 
 export default MainPage;

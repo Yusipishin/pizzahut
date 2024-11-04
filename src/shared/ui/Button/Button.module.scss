@@ -33,6 +33,13 @@
     background: var(--accent-color);
 }
 
+.outlineAccent {
+    position: relative;
+    border: 1px solid #ffa70a;
+    background: var(--bg-color);
+    color: var(--primary-color);
+}
+
 .inverted {
     color: var(--secondary-color);
     background: var(--inverted-btn-color);
@@ -44,6 +51,10 @@
 
 .mRadius {
     border-radius: var(--border-m-radius);
+}
+
+.lRadius {
+    border-radius: var(--border-l-radius);
 }
 
 .square {

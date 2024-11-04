@@ -1,0 +1,13 @@
+.Header {
+    padding: 15px 0;
+}
+
+.HeaderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.outline {
+    border-bottom: 1px solid var(--inverted-bg-color);
+}

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Text, TextSize } from './Text';
+import { Text } from './Text';
 
 const title = 'TextTitle';
 const text = 'TextContent';
@@ -27,8 +27,8 @@ describe('shared/ui/Text', () => {
     });
 
     test('Applies size classes correctly', () => {
-        render(<Text size={TextSize.L} text={text} />);
-        expect(screen.getByTestId('Text.div')).toHaveClass('size_l');
+        render(<Text size="L" text={text} />);
+        expect(screen.getByTestId('Text.div')).toHaveClass('L');
     });
 
     test('Does not render title when not provided', () => {
@@ -46,7 +46,7 @@ describe('shared/ui/Text', () => {
         expect(screen.getByTestId('Text.div')).toHaveClass(
             'primary',
             'left',
-            'size_s',
+            'S',
         );
         expect(screen.queryByTestId('Text.Header'));
         expect(screen.queryByTestId('Text.Paragraph'));

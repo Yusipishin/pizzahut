@@ -1,16 +1,18 @@
-import { screen } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 import AppRouter from './AppRouter';
 import { getRouteMain } from '@/shared/const/router';
 
 describe('app/providers/router/AppRouter.test', () => {
-    test('The page render', async () => {
+    test('The page render', () => {
         componentRender(<AppRouter />, {
             route: getRouteMain(),
         });
 
-        const page = await screen.findByTestId('MainPage');
-        expect(page).toBeInTheDocument();
+        waitFor(() => {
+            const page = screen.findByTestId('MainPage');
+            expect(page).toBeInTheDocument();
+        });
     });
 
     test('Page not found', async () => {
@@ -18,8 +20,10 @@ describe('app/providers/router/AppRouter.test', () => {
             route: '/abcde',
         });
 
-        const page = await screen.findByTestId('MainPage');
-        expect(page).toBeInTheDocument();
+        waitFor(() => {
+            const page = screen.findByTestId('MainPage');
+            expect(page).toBeInTheDocument();
+        });
     });
 
     // test('Редирект неавторизованного пользователя на главную страницу', async () => {

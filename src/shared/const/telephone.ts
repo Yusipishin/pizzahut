@@ -1,1 +1,1 @@
-export const PHONE_NUMBER = '+79999999999';
+export const PHONE_NUMBER = '+7 (999) 999-99-99';

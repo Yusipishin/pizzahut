@@ -2,8 +2,13 @@ import { ButtonHTMLAttributes, memo, ReactNode } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
 
-type ButtonTheme = 'clear' | 'inverted' | 'accent' | 'outline';
-type ButtonRadius = 'halfRadius' | 'mRadius';
+type ButtonTheme =
+    | 'clear'
+    | 'inverted'
+    | 'accent'
+    | 'outline'
+    | 'outlineAccent';
+type ButtonRadius = 'halfRadius' | 'mRadius' | 'lRadius';
 type ButtonSize = 'size_xs' | 'size_s' | 'size_m' | 'size_l' | 'size_xl';
 type ButtonEffect = 'opacityEffect' | 'scaleEffect';
 

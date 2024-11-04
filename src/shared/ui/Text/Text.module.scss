@@ -30,13 +30,7 @@
 }
 
 .error {
-    .title {
-        color: var(--error-light-color);
-    }
-
-    .text {
-        color: var(--error-dark-color);
-    }
+    color: var(--red-color);
 }
 
 .left {
@@ -51,22 +45,22 @@
     text-align: center;
 }
 
-.size_xs {
+.XS {
     font: var(--font-xs);
 }
 
-.size_s {
+.S {
     font: var(--font-s);
 }
 
-.size_m {
+.M {
     font: var(--font-m);
 }
 
-.size_l {
+.L {
     font: var(--font-l);
 }
 
-.size_xl {
+.XL {
     font: var(--font-xl);
 }

@@ -31,6 +31,7 @@
 
     // border
     --border-m-radius: 12px;
+    --border-l-radius: 18px;
     --border-half-radius: 50%;
 
     // sizes
@@ -48,7 +49,6 @@
     --opacity-half: 0.5;
 
     // colors
-    --error-light-color: #f70909;
-    --error-dark-color: #ad0909;
+    --red-color: #c92e2e;
     --overlay-color: linear-gradient(134deg, rgba(0 0 0 / 50%) 0%, rgba(187 187 187 / 50%) 100%);
 }

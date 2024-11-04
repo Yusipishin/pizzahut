@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Text, TextSize } from './Text';
+import { Text } from './Text';
 
 const meta: Meta<typeof Text> = {
     component: Text,
@@ -56,7 +56,7 @@ export const SizeL: Story = {
     args: {
         title: 'Main Title',
         text: 'Random text text text text',
-        size: TextSize.L,
+        size: 'L',
     },
 };
 
@@ -64,7 +64,7 @@ export const SizeM: Story = {
     args: {
         title: 'Main Title',
         text: 'Random text text text text',
-        size: TextSize.M,
+        size: 'M',
     },
 };
 
@@ -72,7 +72,7 @@ export const SizeS: Story = {
     args: {
         title: 'Main Title',
         text: 'Random text text text text',
-        size: TextSize.S,
+        size: 'S',
     },
 };
 
@@ -80,7 +80,7 @@ export const SizeXL: Story = {
     args: {
         title: 'Main Title',
         text: 'Random text text text text',
-        size: TextSize.XL,
+        size: 'XL',
     },
 };
 
@@ -88,7 +88,7 @@ export const SizeXS: Story = {
     args: {
         title: 'Main Title',
         text: 'Random text text text text',
-        size: TextSize.XS,
+        size: 'XS',
     },
 };
 

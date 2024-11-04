@@ -43,6 +43,13 @@ export const Outline: Story = {
     },
 };
 
+export const OutlineAccent: Story = {
+    args: {
+        children: 'Text',
+        theme: 'outlineAccent',
+    },
+};
+
 export const HalfRadiusOutline: Story = {
     args: {
         children: 'Text',
@@ -56,6 +63,14 @@ export const MRadiusOutline: Story = {
         children: 'Text',
         theme: 'outline',
         radius: 'mRadius',
+    },
+};
+
+export const LRadiusOutline: Story = {
+    args: {
+        children: 'Text',
+        theme: 'outline',
+        radius: 'lRadius',
     },
 };
 
