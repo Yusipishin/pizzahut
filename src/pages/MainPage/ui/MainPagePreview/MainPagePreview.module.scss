@@ -1,0 +1,26 @@
+.MainPagePreview {
+    margin: 50px 0 120px 0;
+}
+
+.img {
+    filter: drop-shadow(0 0 50px rgba(255, 184, 0, 0.25));
+}
+
+.stick {
+    height: 92px;
+    border: 1px solid var(--inverted-bg-color);
+}
+
+.text {
+    margin: 22px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.playText {
+    max-width: 215px;
+}
+
+.orderBtn {
+    padding: 16px 20px;
+}
