@@ -5,6 +5,22 @@ import { StyleDecorator } from '@/shared/config/storybook/StyleDecorator';
 import { SuspenseDecorator } from '@/shared/config/storybook/SuspenseDecorator';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator';
 import { Theme } from '@/shared/const/theme';
+import { TranslationDecorator } from '@/shared/config/storybook/TranslationDecorator';
+
+export const globalTypes = {
+    locale: {
+        name: 'Locale',
+        description: 'Internationalization locale',
+        defaultValue: 'ru',
+        toolbar: {
+            icon: 'globe',
+            items: [
+                { value: 'ru', right: 'ru', title: 'Русский' },
+                { value: 'en', right: 'en', title: 'English' },
+            ],
+        },
+    },
+};
 
 const meta: Meta = {
     parameters: {
@@ -21,6 +37,7 @@ const meta: Meta = {
         StyleDecorator,
         RouterDecorator,
         SuspenseDecorator,
+        TranslationDecorator,
         ThemeDecorator(Theme.DARK),
         withThemeByClassName({
             defaultTheme: 'dark',

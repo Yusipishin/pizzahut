@@ -4,7 +4,7 @@ import MainPage from './MainPage';
 
 const meta: Meta<typeof MainPage> = {
     component: MainPage,
-    title: 'pages/MainPage',
+    title: 'pages/MainPage/MainPage',
     args: {
         to: '/',
     },

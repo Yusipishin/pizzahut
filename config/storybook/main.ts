@@ -24,6 +24,8 @@ const config: StorybookConfig = {
         options: {},
     },
 
+    staticDirs: ['../../public'],
+
     webpackFinal: async (config: Configuration) => {
         const paths = {
             build: '',
