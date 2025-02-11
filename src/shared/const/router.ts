@@ -6,5 +6,5 @@ export enum AppRoutes {
     NOT_FOUND = 'not_found',
 }
 
-export const getRouteMain = () => '/uhta';
+export const getRouteMain = () => '/';
 export const getRouteForbidden = () => '/forbidden';

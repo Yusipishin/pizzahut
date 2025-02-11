@@ -1,0 +1,26 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "firstname": "Алексей",
+            "telephone": 79121151730,
+            "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg",
+            "roles": ["ADMIN"],
+            "features": {
+                "isArticleRatingEnabled": false,
+                "isCounterEnabled": false
+            }
+        },
+        {
+            "id": "2",
+            "firstname": "Иван",
+            "telephone": 79121151731,
+            "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg",
+            "roles": ["USER"],
+            "features": {
+                "isArticleRatingEnabled": true,
+                "isCounterEnabled": true
+            }
+        }
+    ]
+}

@@ -3,29 +3,29 @@ import { Input } from './Input';
 
 describe('shared/ui/Input.test', () => {
     test('Render', () => {
-        render(<Input />);
+        render(<Input id="input" />);
         expect(screen.getByTestId('Input.div')).toBeInTheDocument();
         screen.debug();
     });
 
     test('Render with placeholder', () => {
-        render(<Input placeholder="Enter text" />);
-        expect(screen.getByTestId('Input.divPlaceholder')).toBeInTheDocument();
-        expect(screen.getByTestId('Input.divPlaceholder')).toHaveTextContent(
+        render(<Input id="input" placeholder="Enter text" />);
+        expect(screen.getByTestId('Input.label')).toBeInTheDocument();
+        expect(screen.getByTestId('Input.label')).toHaveTextContent(
             'Enter text',
         );
         screen.debug();
     });
 
     test('Apply custom className', () => {
-        render(<Input className="customClass" />);
+        render(<Input id="input" className="customClass" />);
         expect(screen.getByTestId('Input.div')).toHaveClass('customClass');
         screen.debug();
     });
 
     test('Handle change event', () => {
         const onChange = jest.fn();
-        render(<Input onChange={onChange} />);
+        render(<Input id="input" onChange={onChange} />);
 
         const input = screen.getByTestId('Input.input');
         fireEvent.change(input, { target: { value: 'Hello' } });
@@ -38,14 +38,16 @@ describe('shared/ui/Input.test', () => {
     });
 
     test('Autofocus input', () => {
-        render(<Input autofocus />);
+        render(<Input id="input" autofocus />);
         expect(screen.getByTestId('Input.input')).toHaveFocus();
         screen.debug();
     });
 
     test('Readonly input', () => {
         const onChange = jest.fn();
-        render(<Input readonly onChange={onChange} value="Readonly" />);
+        render(
+            <Input id="input" readonly onChange={onChange} value="Readonly" />,
+        );
 
         const input: HTMLInputElement = screen.getByTestId('Input.input');
         expect(input).toHaveAttribute('readonly');
@@ -59,9 +61,9 @@ describe('shared/ui/Input.test', () => {
     });
 
     test('Input value is controlled', () => {
-        const { rerender } = render(<Input value="Initial" />);
+        const { rerender } = render(<Input id="input" value="Initial" />);
         expect(screen.getByTestId('Input.input')).toContainHTML('Initial');
-        rerender(<Input value="Updated" />);
+        rerender(<Input id="input" value="Updated" />);
         expect(screen.getByTestId('Input.input')).toContainHTML('Updated');
         screen.debug();
     });

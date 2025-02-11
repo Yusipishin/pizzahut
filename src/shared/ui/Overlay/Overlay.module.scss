@@ -10,4 +10,5 @@
     bottom: 0;
     z-index: var(--overlay-z-index);
     cursor: pointer;
+    backdrop-filter: blur(10px);
 }

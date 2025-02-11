@@ -13,12 +13,13 @@ interface ModalProps {
     isOpen: boolean;
     onClose: () => void;
     lazy?: boolean;
+    small?: boolean;
 }
 
 const ANIMATION_DELAY = 300;
 
 export const Modal = (props: ModalProps) => {
-    const { className, children, isOpen, onClose, lazy } = props;
+    const { className, children, isOpen, onClose, lazy, small } = props;
 
     const { close, isClosing, isMounted } = useModal({
         animationDelay: ANIMATION_DELAY,
@@ -49,7 +50,11 @@ export const Modal = (props: ModalProps) => {
                 className={classNames(cls.Modal, mods, [className])}
             >
                 <Overlay data-testid="Modal.Overlay" onClick={close} />
-                <div className={cls.content}>
+                <div
+                    className={classNames(cls.content, {
+                        [cls.smallContent]: small,
+                    })}
+                >
                     {children}
                     <Icon
                         Svg={CloseIcon}

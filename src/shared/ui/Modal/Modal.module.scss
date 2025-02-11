@@ -4,25 +4,31 @@
     right: 0;
     bottom: 0;
     opacity: 0;
-    z-index: 100;
     display: flex;
     position: fixed;
     align-items: center;
     pointer-events: none;
     justify-content: center;
+    z-index: var(--modal-z-index);
 }
 
 .content {
     height: 600px;
-    width: 1000px;
+    width: 960px;
     max-width: 60%;
     position: relative;
     border-radius: 12px;
     transform: scale(0.5);
     transition: 0.3s transform;
     background: var(--bg-color);
-    padding: 40px 30px;
+    padding: 30px;
     z-index: var(--modal-z-index);
+    border: 1px solid var(--primary-color);
+}
+
+.smallContent {
+    width: 450px;
+    height: 500px;
 }
 
 .opened {
@@ -42,8 +48,8 @@
 }
 
 .closeIcon {
-    top: 30px;
-    right: 30px;
+    top: -45px;
+    right: -45px;
     cursor: pointer;
     position: absolute;
 }

@@ -2,11 +2,12 @@ import { UserRole } from '../consts/userConsts';
 
 export interface User {
     id: string;
-    username: string;
+    telephone?: string;
     roles: UserRole[];
     firstname?: string;
-    lastname?: string;
-    age?: number;
+    email?: string;
+    address?: string;
+    birthday?: string;
     city?: string;
     avatar?: string;
 }

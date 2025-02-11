@@ -9,9 +9,11 @@ import { CombinedState } from 'redux';
 import { UserSchema } from '@/entities/User';
 import { rtkApi } from '@/shared/api/rtkApi';
 import { ScrollbarSchema } from '@/features/Scrollbar';
+import { LoginSchema } from '@/features/AuthByTelephone';
 
 export interface StateSchema {
     user: UserSchema;
+    loginForm: LoginSchema;
     scrollbar: ScrollbarSchema;
     [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>;
 

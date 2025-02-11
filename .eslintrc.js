@@ -64,6 +64,7 @@ module.exports = {
                     'radius',
                     'Tag',
                     'effect',
+                    'mask',
                 ],
             },
         ],
