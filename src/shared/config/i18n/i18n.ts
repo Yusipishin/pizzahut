@@ -10,7 +10,7 @@ i18n.use(Backend)
     .init({
         lng: 'ru',
         fallbackLng: ['en', 'ru'],
-        debug: __IS_DEV__,
+        // debug: __IS_DEV__,
 
         interpolation: {
             escapeValue: false,

@@ -3,6 +3,7 @@ import {
     ChangeEvent,
     InputHTMLAttributes,
     memo,
+    MutableRefObject,
     useEffect,
     useRef,
     useState,
@@ -19,6 +20,8 @@ type HTMLInputProps = Omit<
 
 interface InputProps extends HTMLInputProps {
     id: string;
+    error?: string;
+    newRef?: MutableRefObject<HTMLInputElement>;
     square?: boolean;
     className?: string;
     value?: string | number;
@@ -33,6 +36,8 @@ interface InputProps extends HTMLInputProps {
 export const Input = memo((props: InputProps) => {
     const {
         id,
+        error,
+        newRef,
         className,
         value = '',
         onChange,
@@ -49,12 +54,13 @@ export const Input = memo((props: InputProps) => {
 
     const [inputValue, setInputValue] = useState(value);
 
-    const ref = useRef<HTMLInputElement>(null);
+    const defaultRef = useRef<HTMLInputElement>(null);
     const phoneMaskRef = useMask({
         showMask: true,
         mask: '+7 (___) ___-__-__',
         replacement: { _: /\d/ },
     });
+    const ref = phoneMask ? phoneMaskRef : newRef || defaultRef;
 
     useEffect(() => {
         if (autofocus) {
@@ -66,7 +72,7 @@ export const Input = memo((props: InputProps) => {
         } else {
             setInputValue(value);
         }
-    }, [autofocus, phoneMask, value]);
+    }, [autofocus, phoneMask, ref, value]);
 
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         const newValue = e.target.value;
@@ -96,14 +102,17 @@ export const Input = memo((props: InputProps) => {
             )}
             <input
                 id={id}
+                ref={ref}
                 type={type}
                 value={inputValue}
                 readOnly={readonly}
                 placeholder={placeholder}
                 data-testid="Input.input"
                 onChange={onChangeHandler}
-                ref={phoneMask ? phoneMaskRef : ref}
-                className={classNames(cls.input, { [cls.square]: square })}
+                className={classNames(cls.input, {
+                    [cls.square]: square,
+                    [cls.error]: error,
+                })}
                 {...otherProps}
             />
         </VStack>

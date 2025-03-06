@@ -16,7 +16,7 @@ export const loginSlice = createSlice({
         setTelephone: (state, action: PayloadAction<string>) => {
             state.telephone = action.payload;
         },
-        setCode: (state, action: PayloadAction<number>) => {
+        setCode: (state, action: PayloadAction<string[]>) => {
             state.code = action.payload;
         },
     },

@@ -49,10 +49,7 @@ server.post('/send-code', (req, res) => {
 server.post('/verify-code', (req, res) => {
     const { telephone, code } = req.body;
 
-    if (
-        verificationCodes[telephone] &&
-        verificationCodes[telephone] === Number(code)
-    ) {
+    if (verificationCodes[telephone] && verificationCodes[telephone] === code) {
         delete verificationCodes[telephone];
         const db = JSON.parse(
             fs.readFileSync(path.resolve(__dirname, 'db.json'), 'UTF-8'),

@@ -6,6 +6,7 @@ import { AppLink } from '../../../AppLink/AppLink';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
 import cls from './Dropdown.module.scss';
+import { Button } from '../../../Button';
 
 export interface DropdownItem {
     disabled?: boolean;
@@ -43,8 +44,9 @@ export function Dropdown(props: DropdownProps) {
             <Menu.Items className={classNames(cls.menu, {}, menuClasses)}>
                 {items.map((item, i) => {
                     const content = ({ active }: { active: boolean }) => (
-                        <button
+                        <Button
                             type="button"
+                            theme="outline"
                             onClick={item.onClick}
                             disabled={item.disabled}
                             className={classNames(cls.item, {
@@ -52,7 +54,7 @@ export function Dropdown(props: DropdownProps) {
                             })}
                         >
                             {item.content}
-                        </button>
+                        </Button>
                     );
 
                     if (item.href) {

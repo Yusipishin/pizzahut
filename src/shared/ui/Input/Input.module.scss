@@ -18,8 +18,8 @@
 }
 
 .square {
-    width: 68px;
-    height: 68px;
+    width: 75px;
+    height: 75px;
     text-align: center;
     font: var(--font-m);
     border: 1px solid var(--primary-color);
@@ -27,4 +27,8 @@
     &:focus {
         border: 1px solid var(--outline-color);
     }
+}
+
+.error {
+    border: 1px solid var(--red-color);
 }

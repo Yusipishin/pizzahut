@@ -1,6 +1,6 @@
 export interface LoginSchema {
     telephone: string;
-    code: number;
+    code: string[];
     isLoading: boolean;
     error?: string;
 }
