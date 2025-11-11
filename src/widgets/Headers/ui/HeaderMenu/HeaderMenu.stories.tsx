@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import LoginForm from './LoginForm';
+import { HeaderMenu } from './HeaderMenu';
 
-const meta: Meta<typeof LoginForm> = {
-    component: LoginForm,
-    title: 'features/AuthByTelephone/LoginForm',
+const meta: Meta<typeof HeaderMenu> = {
+    component: HeaderMenu,
+    title: 'shared/HeaderMenu',
 };
 export default meta;
 

@@ -3,7 +3,7 @@ import LoginCode from './LoginCode';
 
 const meta: Meta<typeof LoginCode> = {
     component: LoginCode,
-    title: 'shared/LoginCode',
+    title: 'features/AuthByTelephone/LoginCode',
 };
 export default meta;
 

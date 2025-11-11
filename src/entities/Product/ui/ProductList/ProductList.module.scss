@@ -1,0 +1,13 @@
+.ProductList {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.skeleton {
+    padding: 20px;
+    max-width: 650px;
+    position: relative;
+    transition: transform 0.3s;
+}

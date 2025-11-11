@@ -36,6 +36,7 @@ export function Dropdown(props: DropdownProps) {
             ])}
         >
             <Menu.Button
+                as="div"
                 data-testid="Dropdown.ButtonTrigger"
                 className={popupCls.trigger}
             >

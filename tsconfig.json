@@ -2,12 +2,11 @@
     "compilerOptions": {
         "outDir": "./dist/",
         "noImplicitAny": true,
-        "module": "ESNext",
+        "module": "nodenext",
         "target": "es2015",
         "jsx": "react-jsx",
         "allowJs": true,
-        "moduleResolution": "node",
-        "baseUrl": ".",
+        "moduleResolution": "nodenext",
         "paths": {
             "@/*": ["./src/*"]
         },
@@ -21,5 +20,5 @@
             "module": "CommonJS"
         }
     },
-    "exclude": ["cypress.config.ts", "cypress", "node_modules"]
+    "exclude": ["node_modules"]
 }

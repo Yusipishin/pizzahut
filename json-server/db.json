@@ -5,21 +5,1130 @@
             "firstname": "Алексей",
             "telephone": 79121151730,
             "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg",
-            "roles": ["ADMIN"],
-            "features": {
-                "isArticleRatingEnabled": false,
-                "isCounterEnabled": false
-            }
+            "roles": ["ADMIN"]
         },
         {
             "id": "2",
             "firstname": "Иван",
             "telephone": 79121151731,
             "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg",
-            "roles": ["USER"],
-            "features": {
-                "isArticleRatingEnabled": true,
-                "isCounterEnabled": true
+            "roles": ["USER"]
+        }
+    ],
+    "sauce": [
+        {
+            "id": "1",
+            "sale": 49,
+            "name": "Сырный",
+            "type": "SAUCE",
+            "description": "Фирменный соус со вкусом расплавленного сыра для бортиков пиццы и горячих закусок",
+            "img": "https://i.postimg.cc/7PpBVCB2/image.png"
+        },
+        {
+            "id": "2",
+            "sale": 49,
+            "name": "Чесночный",
+            "type": "SAUCE",
+            "description": "Фирменный соус с чесночным вкусом для бортиков пиццы и горячих закусок",
+            "img": "https://i.postimg.cc/L6Lx0H70/image.png"
+        },
+        {
+            "id": "3",
+            "sale": 49,
+            "name": "Барбекю",
+            "type": "SAUCE",
+            "description": "Фирменный соус с дымным ароматом для бортиков пиццы и горячих закусок",
+            "img": "https://i.postimg.cc/43Zb0VtY/image.png"
+        },
+        {
+            "id": "4",
+            "sale": 49,
+            "name": "Медово-горчичный",
+            "type": "SAUCE",
+            "description": "Фирменный медово-горчичный соус со жгучей сладостью для бортиков пиццы и горячих закусок",
+            "img": "https://i.postimg.cc/FKWpJ1d1/image.png"
+        },
+        {
+            "id": "5",
+            "sale": 45,
+            "name": "Малиновое варенье",
+            "type": "SAUCE",
+            "description": "Идеально к сырникам",
+            "img": "https://i.postimg.cc/c6y8nGBv/image.png"
+        }
+    ],
+    "snack": [
+        {
+            "id": "1",
+            "sale": 379,
+            "weight": 300,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Паста с креветками",
+            "description": "Паста из печи с креветками, томатами, моцареллой, соусом альфредо и чесноком",
+            "img": "https://i.postimg.cc/xjkxMGPQ/image.png"
+        },
+        {
+            "id": "2",
+            "sale": 259,
+            "weight": 210,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Дэнвич ветчина и сыр",
+            "description": "Поджаристая чиабатта и знакомое сочетание ветчины, цыпленка, моцареллы со свежими томатами, соусом ранч и чесноком",
+            "img": "https://i.postimg.cc/SsxLS4gq/image.png"
+        },
+        {
+            "id": "3",
+            "sale": 259,
+            "weight": 210,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Дэнвич чоризо барбекю",
+            "description": "Насыщенный вкус острых колбасок чоризо и пикантной пепперони с соусами бургер и барбекю, свежими томатами, маринованными огурчиками, моцареллой и луком в румяной чиабатте",
+            "img": "https://i.postimg.cc/mZFjtLb2/image.png"
+        },
+        {
+            "id": "4",
+            "sale": 359,
+            "weight": 350,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Паста Карбонара",
+            "description": "Паста из печи с беконом, сырами чеддер и пармезан, томатами, моцареллой, фирменным соусом альфредо и чесноком",
+            "img": "https://i.postimg.cc/Nfq4X3M8/image.png"
+        },
+        {
+            "id": "5",
+            "sale": 359,
+            "weight": 330,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Паста Мясная",
+            "description": "Паста из печи с митболами, соусом бургер, моцареллой, фирменным томатным соусом и чесноком",
+            "img": "https://i.postimg.cc/VkFDmKzq/image.png"
+        },
+        {
+            "id": "6",
+            "sale": 359,
+            "weight": 330,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Паста Песто",
+            "description": "Паста из печи с соусом песто, цыпленком, томатами, моцареллой и фирменным томатным соусом",
+            "img": "https://i.postimg.cc/bv3bFMp5/image.png"
+        },
+        {
+            "id": "7",
+            "sale": 219,
+            "weight": 160,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Супермясной Додстер",
+            "description": "Горячая закуска с цыпленком, моцареллой, митболами, острыми колбасками чоризо и соусом бургер в тонкой пшеничной лепешке",
+            "img": "https://i.postimg.cc/NFy1X4hz/image.png"
+        },
+        {
+            "id": "8",
+            "sale": 179,
+            "weight": 160,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Додстер с ветчиной",
+            "description": "Горячий завтрак с ветчиной, томатами, моцареллой, соусом ранч в тонкой пшеничной лепешке",
+            "img": "https://i.postimg.cc/DwhB993f/image.png"
+        },
+        {
+            "id": "9",
+            "sale": 179,
+            "weight": 210,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Додстер",
+            "description": "Легендарная горячая закуска с цыпленком, томатами, моцареллой, соусом ранч в тонкой пшеничной лепешке",
+            "img": "https://i.postimg.cc/xTvP36Jw/image.png"
+        },
+        {
+            "id": "10",
+            "sale": 189,
+            "weight": 190,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Острый Додстер",
+            "description": "Горячая закуска с цыпленком, перчиком халапеньо, маринованными огурчиками, томатами, моцареллой и соусом барбекю в тонкой пшеничной лепешке",
+            "img": "https://i.postimg.cc/QtFbgs1m/image.png"
+        },
+        {
+            "id": "11",
+            "sale": 179,
+            "weight": 150,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Грибной Стартер",
+            "description": "Горячая закуска с шампиньонами, моцареллой и соусом ранч в тонкой пшеничной лепешке",
+            "img": "https://i.postimg.cc/Dz2L6Fks/image.png"
+        },
+        {
+            "id": "12",
+            "sale": 269,
+            "weight": 220,
+            "type": "SNACK",
+            "portion": "10 шт",
+            "name": "Куриные наггетсы",
+            "description": "Нежное куриное мясо в хрустящей панировке",
+            "img": "https://i.postimg.cc/jq96bGP0/image.png"
+        },
+        {
+            "id": "13",
+            "sale": 249,
+            "weight": 150,
+            "type": "SNACK",
+            "portion": "Большая",
+            "name": "Картофель из печи",
+            "description": "Запеченная в печи картошечка — привычный вкус и мало масла. В составе пряные специи",
+            "img": "https://i.postimg.cc/pTcfySSj/image.png"
+        },
+        {
+            "id": "14",
+            "sale": 290,
+            "weight": 170,
+            "type": "SNACK",
+            "portion": "1 шт",
+            "name": "Салат Цезарь",
+            "description": "Цыпленок, свежие листья салата айсберг, томаты черри, сыры чеддер и пармезан, соус цезарь, пшеничные гренки, итальянские травы",
+            "img": "https://i.postimg.cc/Gmbx7vvH/image.png"
+        }
+    ],
+    "drink": [
+        {
+            "id": "1",
+            "sale": 129,
+            "name": "Какао",
+            "type": "DRINK",
+            "count": "0,3 л",
+            "description": "Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком",
+            "img": "https://i.postimg.cc/W4bS304Q/image.png"
+        },
+        {
+            "id": "2",
+            "sale": 129,
+            "name": "Добрый Кола Малина",
+            "type": "DRINK",
+            "count": "0,5 л",
+            "img": "https://i.postimg.cc/jSYzWPMM/image.png"
+        },
+        {
+            "id": "3",
+            "sale": 209,
+            "name": "Апельсиновый сок Rich",
+            "type": "DRINK",
+            "count": "1 л",
+            "img": "https://i.postimg.cc/bNtxN39G/image.png"
+        },
+        {
+            "id": "4",
+            "sale": 145,
+            "name": "Морс Клюква",
+            "type": "DRINK",
+            "count": "0,45 л",
+            "description": "Эта ягода хитра! Наш фирменный морс для любителей сладкой кислинки. Дизайн товара может отличаться",
+            "img": "https://i.postimg.cc/V6vMyRNk/image.png"
+        },
+        {
+            "id": "5",
+            "sale": 129,
+            "name": "Rich Tea Черный с лимоном",
+            "type": "DRINK",
+            "count": "0,5 л",
+            "img": "https://i.postimg.cc/XqyCqYdM/image.png"
+        }
+    ],
+    "dessert": [
+        {
+            "id": "1",
+            "count": 1,
+            "sale": 135,
+            "type": "DESSERT",
+            "weight": 90,
+            "name": "Сорбет Лимонный фреш",
+            "img": "https://i.postimg.cc/j5BhZ9hb/image.png",
+            "description": "Цитрусовая свежесть в стаканчике. Сладкий вкус с приятной кислинкой"
+        },
+        {
+            "id": "2",
+            "count": 1,
+            "sale": 169,
+            "type": "DESSERT",
+            "weight": 100,
+            "name": "Чизкейк Нью-Йорк с кокосом",
+            "img": "https://i.postimg.cc/WzQ0wkTb/image.png",
+            "description": "Это не классический творожный чизкейк, а похож! Это его нежный брат близнец с новым кокосовым вкусом"
+        },
+        {
+            "id": "3",
+            "count": 1,
+            "sale": 109,
+            "type": "DESSERT",
+            "weight": 120,
+            "name": "Маффин Три шоколада",
+            "img": "https://i.postimg.cc/g2y33j5m/image.png",
+            "description": "Ну и кекс этот маффин! Он из натурального какао, а внутри — нежная начинка из кубиков белого и молочного шоколада"
+        },
+        {
+            "id": "4",
+            "count": 4,
+            "sale": 320,
+            "type": "DESSERT",
+            "weight": 270,
+            "name": "Сырники с малиновым вареньем",
+            "img": "https://i.postimg.cc/vBKnGV1L/image.png",
+            "description": "Любимый десерт многих наших гостей — румяные сырники из печи. Такие нежные, в меру сладкие и напоминающие детство"
+        },
+        {
+            "id": "5",
+            "count": 16,
+            "sale": 320,
+            "type": "DESSERT",
+            "weight": 210,
+            "name": "Рулетики с корицей",
+            "img": "https://i.postimg.cc/0Nfd1jdc/image.png",
+            "description": "Десерт, одобренный нашими бабушками. Горячие сладкие рулетики с пряной корицей и сахаром"
+        }
+    ],
+    "pizza": [
+        {
+            "id": "1",
+            "name": "Мексиканская",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/jS0wgTp0/image.png",
+            "sale": {
+                "small": 539,
+                "average": 789,
+                "big": 939
+            },
+            "weight": {
+                "traditional": {
+                    "small": 410,
+                    "average": 570,
+                    "big": 770
+                },
+                "thin": {
+                    "average": 420,
+                    "big": 680
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Перец чили",
+                    "Томаты",
+                    "Кетчуп",
+                    "Салями",
+                    "Кукуруза",
+                    "Сыры чеддер и пармезан",
+                    "Каперсы",
+                    "Оливковое масло"
+                ],
+                "optional": ["Креветки"],
+                "additional": [
+                    "Сырный бортик",
+                    "Моцарелла",
+                    "Бекон",
+                    "Ветчина",
+                    "Маринованные огурчики",
+                    "Томаты",
+                    "Митболы"
+                ]
+            }
+        },
+        {
+            "id": "2",
+            "name": "Пепперони",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/yN7JKP6L/image.png",
+            "sale": {
+                "small": 539,
+                "average": 789,
+                "big": 939
+            },
+            "weight": {
+                "traditional": {
+                    "small": 420,
+                    "average": 610,
+                    "big": 840
+                },
+                "thin": {
+                    "average": 520,
+                    "big": 720
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Моцарелла",
+                    "Сырокопченая колбаса",
+                    "Томаты",
+                    "Кетчуп",
+                    "Томатная паста",
+                    "Чеснок",
+                    "Паприка"
+                ],
+                "optional": ["Оливковое масло", "Сыры чеддер и пармезан"],
+                "additional": [
+                    "Сырный бортик",
+                    "Сыры чеддер и пармезан",
+                    "Халапеньо",
+                    "Цыпленок",
+                    "Ветчина",
+                    "Ананасы",
+                    "Итальянские травы"
+                ]
+            }
+        },
+        {
+            "id": "3",
+            "name": "Цыпленок барбекю",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/fb5VR9JD/image.png",
+            "sale": {
+                "small": 589,
+                "average": 899,
+                "big": 999
+            },
+            "weight": {
+                "traditional": {
+                    "small": 390,
+                    "average": 630,
+                    "big": 800
+                },
+                "thin": {
+                    "average": 490,
+                    "big": 710
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Орегано",
+                    "Бекон",
+                    "Красный лук",
+                    "Чеснок",
+                    "Базилик",
+                    "Лук репчатый",
+                    "Томаты"
+                ],
+                "optional": [],
+                "additional": [
+                    "Сырный бортик",
+                    "Ветчина",
+                    "Пепперони",
+                    "Маринованные огурчики",
+                    "Кубики брынзы",
+                    "Митболы"
+                ]
+            }
+        },
+        {
+            "id": "4",
+            "name": "Гавайская",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/ZRM0rz8Q/image.png",
+            "sale": {
+                "small": 319,
+                "average": 559,
+                "big": 689
+            },
+            "weight": {
+                "traditional": {
+                    "small": 310,
+                    "average": 470,
+                    "big": 640
+                },
+                "thin": {
+                    "average": 360,
+                    "big": 530
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Ананасы",
+                    "Цыпленок",
+                    "Сыры чеддер и пармезан",
+                    "Томатная паста",
+                    "Орегано",
+                    "Фирменный соус"
+                ],
+                "optional": [],
+                "additional": [
+                    "Сырный бортик",
+                    "Креветки",
+                    "Ветчина",
+                    "Пепперони",
+                    "Маринованные огурчики",
+                    "Красный лук",
+                    "Сладкий перец",
+                    "Митболы"
+                ]
+            }
+        },
+        {
+            "id": "5",
+            "name": "Чикен ранч",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/0QQbMywm/image.png",
+            "sale": {
+                "small": 319,
+                "average": 559,
+                "big": 689
+            },
+            "weight": {
+                "traditional": {
+                    "small": 380,
+                    "average": 590,
+                    "big": 790
+                },
+                "thin": {
+                    "average": 490,
+                    "big": 670
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Цыпленок",
+                    "Ветчина",
+                    "Соус ранч",
+                    "Моцарелла",
+                    "Томаты",
+                    "Чеснок"
+                ],
+                "optional": ["Шампиньоны", "Маринованные огурчики"],
+                "additional": [
+                    "Сырный бортик",
+                    "Пепперони",
+                    "Красный лук",
+                    "Итальянские травы",
+                    "Кубики брынзы",
+                    "Митболы"
+                ]
+            }
+        },
+        {
+            "id": "6",
+            "name": "Капри",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/x8N85pg1/image.png",
+            "sale": {
+                "small": 429,
+                "average": 649,
+                "big": 769
+            },
+            "weight": {
+                "traditional": {
+                    "small": 360,
+                    "average": 520,
+                    "big": 730
+                },
+                "thin": {
+                    "average": 430,
+                    "big": 610
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Шампиньоны",
+                    "Лук репчатый",
+                    "Маслины",
+                    "Кукуруза",
+                    "Томаты",
+                    "Базилик"
+                ],
+                "optional": [],
+                "additional": [
+                    "Сырный бортик",
+                    "Халапеньо",
+                    "Цыпленок",
+                    "Пепперони",
+                    "Ананасы",
+                    "Митболы"
+                ]
+            }
+        },
+        {
+            "id": "7",
+            "name": "Цезарь",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/P5WL0cHL/image.png",
+            "sale": {
+                "small": 429,
+                "average": 649,
+                "big": 769
+            },
+            "weight": {
+                "traditional": {
+                    "small": 320,
+                    "average": 480,
+                    "big": 630
+                },
+                "thin": {
+                    "average": 370,
+                    "big": 550
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Цыпленок",
+                    "Соевый соус",
+                    "Моцарелла",
+                    "Сыры чеддер и пармезан",
+                    "Салат Романо"
+                ],
+                "optional": [],
+                "additional": [
+                    "Сырный бортик",
+                    "Шампиньоны",
+                    "Бекон",
+                    "Томаты",
+                    "Красный лук",
+                    "Сладкий перец"
+                ]
+            }
+        },
+        {
+            "id": "8",
+            "name": "Маргарита",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/9FqwY0NY/image.png",
+            "sale": {
+                "small": 319,
+                "average": 559,
+                "big": 689
+            },
+            "weight": {
+                "traditional": {
+                    "small": 330,
+                    "average": 470,
+                    "big": 630
+                },
+                "thin": {
+                    "average": 380,
+                    "big": 500
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Томатная паста",
+                    "Чеснок",
+                    "Базилик",
+                    "Моцарелла",
+                    "Черри помидоры"
+                ],
+                "optional": [],
+                "additional": [
+                    "Сырный бортик",
+                    "Шампиньоны",
+                    "Бекон",
+                    "Ветчина",
+                    "Пепперони",
+                    "Маринованные огурчики",
+                    "Итальянские травы"
+                ]
+            }
+        },
+        {
+            "id": "9",
+            "name": "Мексиканская",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/jS0wgTp0/image.png",
+            "sale": {
+                "small": 539,
+                "average": 789,
+                "big": 939
+            },
+            "weight": {
+                "traditional": {
+                    "small": 410,
+                    "average": 570,
+                    "big": 770
+                },
+                "thin": {
+                    "average": 420,
+                    "big": 680
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Перец чили",
+                    "Томаты",
+                    "Кетчуп",
+                    "Салями",
+                    "Кукуруза",
+                    "Сыры чеддер и пармезан",
+                    "Каперсы",
+                    "Оливковое масло"
+                ],
+                "optional": ["Креветки"],
+                "additional": [
+                    "Сырный бортик",
+                    "Моцарелла",
+                    "Итальянские травы",
+                    "Сладкий перец",
+                    "Кубики брынзы",
+                    "Митболы"
+                ]
+            }
+        },
+        {
+            "id": "10",
+            "name": "Пепперони",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/yN7JKP6L/image.png",
+            "sale": {
+                "small": 539,
+                "average": 789,
+                "big": 939
+            },
+            "weight": {
+                "traditional": {
+                    "small": 420,
+                    "average": 610,
+                    "big": 840
+                },
+                "thin": {
+                    "average": 520,
+                    "big": 720
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Моцарелла",
+                    "Сырокопченая колбаса",
+                    "Томаты",
+                    "Кетчуп",
+                    "Томатная паста",
+                    "Чеснок",
+                    "Паприка"
+                ],
+                "optional": ["Оливковое масло", "Сыры чеддер и пармезан"],
+                "additional": [
+                    "Сырный бортик",
+                    "Шампиньоны",
+                    "Бекон",
+                    "Ветчина",
+                    "Пепперони",
+                    "Маринованные огурчики",
+                    "Митболы"
+                ]
+            }
+        },
+        {
+            "id": "11",
+            "name": "Цыпленок барбекю",
+            "type": "PIZZA",
+            "img": "https://i.postimg.cc/fb5VR9JD/image.png",
+            "sale": {
+                "small": 589,
+                "average": 899,
+                "big": 999
+            },
+            "weight": {
+                "traditional": {
+                    "small": 390,
+                    "average": 630,
+                    "big": 800
+                },
+                "thin": {
+                    "average": 490,
+                    "big": 710
+                }
+            },
+            "ingredients": {
+                "fixed": [
+                    "Орегано",
+                    "Бекон",
+                    "Красный лук",
+                    "Чеснок",
+                    "Базилик",
+                    "Лук репчатый",
+                    "Томаты"
+                ],
+                "optional": [],
+                "additional": [
+                    "Сырный бортик",
+                    "Ананасы",
+                    "Итальянские травы",
+                    "Сладкий перец",
+                    "Кубики брынзы",
+                    "Митболы"
+                ]
+            }
+        }
+    ],
+    "ingredients": [
+        {
+            "id": "1",
+            "name": "Сырный бортик",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": null,
+                "average": 189,
+                "big": 209
+            }
+        },
+        {
+            "id": "2",
+            "name": "Моцарелла",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "3",
+            "name": "Креветки",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/11eee5d51d4c576da0f0db611c8947bd.png",
+            "sale": {
+                "small": 199,
+                "average": 219,
+                "big": 239
+            }
+        },
+        {
+            "id": "4",
+            "name": "Сыры чеддер и пармезан",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA69C1FE796",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "5",
+            "name": "Халапеньо",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/11ee95b6bfdf98fb88a113db92d7b3df.png",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "id": "6",
+            "name": "Цыпленок",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA5B328D35A",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "7",
+            "name": "Шампиньоны",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA67259A324",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "id": "8",
+            "name": "Бекон",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA637AAB68F",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "9",
+            "name": "Ветчина",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA61B9A8D61",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "10",
+            "name": "Пепперони",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA6258199C3",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "11",
+            "name": "Маринованные огурчики",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A21DA51A81211E9EA89958D782B",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "id": "12",
+            "name": "Томаты",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA7AC1A1D67",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "id": "13",
+            "name": "Красный лук",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA60AE6464C",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "id": "14",
+            "name": "Ананасы",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A21DA51A81211E9AFA6795BA2A0",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "id": "15",
+            "name": "Итальянские травы",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/370dac9ed21e4bffaf9bc2618d258734.png",
+            "sale": {
+                "small": 49,
+                "average": 59,
+                "big": 79
+            }
+        },
+        {
+            "id": "16",
+            "name": "Сладкий перец",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA63F774C1B",
+            "sale": {
+                "small": 69,
+                "average": 79,
+                "big": 99
+            }
+        },
+        {
+            "id": "17",
+            "name": "Кубики брынзы",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA6B0FFC349",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "18",
+            "name": "Митболы",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/b2f3a5d5afe44516a93cfc0d2ee60088.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "19",
+            "name": "Перец чили",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "21",
+            "name": "Кетчуп",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 33,
+                "average": 55,
+                "big": 77
+            }
+        },
+        {
+            "id": "22",
+            "name": "Салями",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "23",
+            "name": "Кукуруза",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "25",
+            "name": "Каперсы",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "26",
+            "name": "Оливковое масло",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 55,
+                "average": 66,
+                "big": 77
+            }
+        },
+        {
+            "id": "28",
+            "name": "Сырокопченая колбаса",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "29",
+            "name": "Томатная паста",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 55,
+                "average": 77,
+                "big": 88
+            }
+        },
+        {
+            "id": "30",
+            "name": "Чеснок",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "31",
+            "name": "Паприка",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 44,
+                "average": 55,
+                "big": 66
+            }
+        },
+        {
+            "id": "32",
+            "name": "Орегано",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "35",
+            "name": "Базилик",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 44,
+                "average": 55,
+                "big": 66
+            }
+        },
+        {
+            "id": "36",
+            "name": "Лук репчатый",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "40",
+            "name": "Фирменный соус",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "41",
+            "name": "Соус ранч",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "42",
+            "name": "Маслины",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "43",
+            "name": "Соевый соус",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "45",
+            "name": "Салат Романо",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 89,
+                "average": 99,
+                "big": 119
+            }
+        },
+        {
+            "id": "46",
+            "name": "Черри помидоры",
+            "img": "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png",
+            "sale": {
+                "small": 122,
+                "average": 133,
+                "big": 144
             }
         }
     ]

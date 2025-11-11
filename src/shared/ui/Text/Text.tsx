@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Text.module.scss';
+import { HStack } from '../Stack';
 
 type TextSize = 'XS' | 'S' | 'M' | 'L' | 'XL';
 type TextTheme = 'primary' | 'error' | 'accent' | 'secondary';
@@ -45,14 +46,22 @@ export const Text = memo((props: TextProps) => {
             data-testid={`${dataTestId}.div`}
             className={classNames(cls.Text, {}, additional)}
         >
-            {title && (
-                <HeaderTag
-                    className={cls.title}
-                    data-testid={`${dataTestId}.Header`}
-                >
-                    {title}
-                </HeaderTag>
-            )}
+            <HStack>
+                {HeaderTag === 'h2' && title && (
+                    <div className={cls.leftLine} />
+                )}
+                {title && (
+                    <HeaderTag
+                        className={cls.title}
+                        data-testid={`${dataTestId}.Header`}
+                    >
+                        {title}
+                    </HeaderTag>
+                )}
+                {HeaderTag === 'h2' && title && (
+                    <div className={cls.rightLine} />
+                )}
+            </HStack>
             {text && (
                 <p className={cls.text} data-testid={`${dataTestId}.Paragraph`}>
                     {text}

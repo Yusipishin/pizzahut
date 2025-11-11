@@ -64,3 +64,18 @@
 .XL {
     font: var(--font-xl);
 }
+
+.leftLine,
+.rightLine {
+    width: 35px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.leftLine {
+    margin-right: 12px;
+}
+
+.rightLine {
+    margin-left: 12px;
+}

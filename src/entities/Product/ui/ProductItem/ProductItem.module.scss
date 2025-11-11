@@ -1,0 +1,43 @@
+.ProductItem {
+    padding: 20px;
+    max-width: 650px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.ProductItem:hover {
+    transform: scale(1.02);
+}
+
+.ProductItem::after {
+    content: "";
+    top: 33%;
+    left: 33%;
+    width: 2px;
+    height: 100%;
+    transform: translate(-33%, -33%);
+    position: absolute;
+    background: var(--additional-bg-color);
+}
+
+.img {
+    max-width: 180px;
+}
+
+.wrapper {
+    gap: 40px;
+}
+
+.wrapper,
+.inner {
+    height: 100%;
+}
+
+.btn {
+    padding: 15px;
+    border-radius: var(--border-l-radius);
+}
+
+.txt {
+    margin: 12px 0 35px;
+}

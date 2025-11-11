@@ -3,7 +3,7 @@ import LoginPhone from './LoginPhone';
 
 const meta: Meta<typeof LoginPhone> = {
     component: LoginPhone,
-    title: 'shared/LoginPhone',
+    title: 'features/AuthByTelephone/LoginPhone',
 };
 export default meta;
 
