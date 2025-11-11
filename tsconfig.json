@@ -2,11 +2,11 @@
     "compilerOptions": {
         "outDir": "./dist/",
         "noImplicitAny": true,
-        "module": "nodenext",
+        "module": "es2022",
         "target": "es2015",
         "jsx": "react-jsx",
         "allowJs": true,
-        "moduleResolution": "nodenext",
+        "moduleResolution": "bundler",
         "paths": {
             "@/*": ["./src/*"]
         },

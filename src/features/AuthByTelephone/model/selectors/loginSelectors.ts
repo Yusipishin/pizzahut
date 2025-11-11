@@ -5,7 +5,7 @@ export const getLoginTelephone = (state: StateSchema) =>
     state?.loginForm?.telephone || '';
 
 export const getLoginCode = createSelector(
-    (state: StateSchema) => state.loginForm.code,
+    (state: StateSchema) => state.loginForm?.code,
     (code) => code || ['', '', '', ''],
 );
 

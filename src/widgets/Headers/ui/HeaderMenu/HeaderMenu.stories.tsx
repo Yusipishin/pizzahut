@@ -3,7 +3,7 @@ import { HeaderMenu } from './HeaderMenu';
 
 const meta: Meta<typeof HeaderMenu> = {
     component: HeaderMenu,
-    title: 'shared/HeaderMenu',
+    title: 'widgets/Headers/HeaderMenu',
 };
 export default meta;
 

@@ -1,5 +1,5 @@
 import { memo, useState } from 'react';
-import { ProductList } from '@/entities/Product';
+import { ProductList, useProducts } from '@/entities/Product';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Container } from '@/shared/ui/Container';
 import { HeaderMenu } from '@/widgets/Headers';
@@ -11,6 +11,7 @@ interface MainPageMenuProps {
 export const MainPageMenu = memo((props: MainPageMenuProps) => {
     const { className } = props;
     const [activeEndpoint, setEndpoint] = useState('pizza');
+    const { data: products, isFetching } = useProducts(activeEndpoint);
 
     const handleClick = (newEndpoint: string) => {
         setEndpoint(newEndpoint);
@@ -22,7 +23,7 @@ export const MainPageMenu = memo((props: MainPageMenuProps) => {
                 handleClick={handleClick}
                 activeEndpoint={activeEndpoint}
             />
-            <ProductList activeEndpoint={activeEndpoint} />
+            <ProductList items={products} isLoading={isFetching} />
         </Container>
     );
 });
