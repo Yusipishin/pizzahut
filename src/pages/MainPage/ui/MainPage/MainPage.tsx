@@ -3,6 +3,7 @@ import { Page } from '@/widgets/Page';
 import { HeaderMain } from '@/widgets/Headers';
 import { MainPagePreview } from '../MainPagePreview/MainPagePreview';
 import { MainPageMenu } from '../MainPageMenu/MainPageMenu';
+import { MainPageBanner } from '../MainPageBanner/MainPageBanner';
 
 const MainPage = memo(() => (
     <>
@@ -10,6 +11,7 @@ const MainPage = memo(() => (
         <Page data-testid="MainPage">
             <MainPagePreview />
             <MainPageMenu />
+            <MainPageBanner />
         </Page>
     </>
 ));
